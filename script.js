@@ -43,3 +43,19 @@ function contadorNumeroPar() {
     alert(`Não há numeros pares no array`);
   }
 }
+function calculoMedia() {
+    let n = parseInt(prompt("Quantos valores serão digitados ? "));
+    let arr = [];
+    let i = 0;
+    while (i < n) {
+      let value = parseFloat(prompt(`Insira o valor ${i + 1}: `));
+      arr.push(value);
+      i++;
+    }
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+      sum += arr[i];
+    }
+    media = sum / arr.length;
+    alert(`A média dos valores do array é: ${media.toFixed(2)}`);
+  }
