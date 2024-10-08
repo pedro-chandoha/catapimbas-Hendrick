@@ -82,7 +82,7 @@ function countPositivosNegativos() {
 
 }
 function multiplicaArray() {
-  let newArr = [];
+  let arr = [];
   let n = parseInt(prompt("Quantos valores serão digitados ? "));
   let i = 0;
   while (i < n) {
@@ -90,8 +90,8 @@ function multiplicaArray() {
     arr.push(value);
     i++; 
   for (let i = 0; i < arr.length; i++) {
-    newArr.push(arr[i] * num);
+    arr.push(arr[i] * num);
       }
   }
-  alert(newArr);
+  alert(arr);
 }
