@@ -85,14 +85,18 @@ function multiplicaArray() {
   let arr = [];
   let n = parseInt(prompt("Quantos valores serão digitados ? "));
   let i = 0;
-  let mult = parseInt(prompt("Por quanto será multiplicado os valores ?"))
+  let mult = parseInt(prompt("Por quanto será multiplicado os valores ?"));
+  
   while (i < n) {
     let value = parseFloat(prompt(`Insira o valor ${i + 1}: `));
     arr.push(value);
-    i++;} 
-  for (let i = 0; i < arr.length; i++) {
-      arr.push(arr[i] * mult);
-      }
+    i++;
+  }
   
-  alert(`Os valores multiplicados são: ${arr}`);
+  let multipliedArr = [];
+  for (let i = 0; i < arr.length; i++) {
+    multipliedArr.push(arr[i] * mult);
+  }
+  
+  alert(`Os valores multiplicados são: ${multipliedArr}`);
 }
